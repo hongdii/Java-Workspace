@@ -204,6 +204,33 @@ public class LoopPractice {
 		}
 	}
 	
+	public void practice13() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("숫자 : ");
+		int num = sc.nextInt();//9
+		
+		// 소수 : 1과 자기 자신만으로 나누어 떨어지는 1보다 큰 양의 정수
+		if(num<2) {
+			System.out.println("잘못 입력하셨습니다");
+		} else {
+			boolean isPrime = true;
+			for(int i=2 ; i<num ; i++) {// 2~8
+				if(num% i == 0) {
+					isPrime= false;
+					break;
+				}
+			}
+			if(isPrime) {
+				System.out.println("소수입니다.");
+			}else {
+				System.out.println("소수가 아닙니다.");
+			}
+			
+			
+		}
+	}
+	
 	public void practice14() {
 		Scanner sc = new Scanner(System.in);
 		
@@ -229,6 +256,10 @@ public class LoopPractice {
 			}
 		}
 		System.out.printf("\n2부터 %d까지 소수의 개수는 %d개입니다.", num, count);
+	}
+	
+	public void practice15() {
+		
 	}
 	
 	// 어려울 경우 출력된걸 한줄씩 코딩해보고 규칙을 찾아 전체 코드 만들기

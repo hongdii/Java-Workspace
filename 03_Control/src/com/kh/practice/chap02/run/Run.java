@@ -4,10 +4,10 @@ import com.kh.practice.chap02.loop.*;
 public class Run {
 	public static void main(String[] args) {
 		LoopPractice lp = new LoopPractice();
-		//lp.practice18();
+		lp.practice13();
 		
 		B_While bw = new B_While() ;
-		bw.method7();
+		//bw.method7();
 	}
 }
 
