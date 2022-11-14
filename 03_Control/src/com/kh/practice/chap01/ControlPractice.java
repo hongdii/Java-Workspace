@@ -243,10 +243,58 @@ public class ControlPractice {
 //		}
 	}
 	
+	public void practice10() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("실행할 기능을 선택하세요.\n"
+				+ "1. 메뉴 출력\n"
+				+ "2. 짝수/홀수\n"
+				+ "3. 합격/불합격\n"
+				+ "4. 계절\n"
+				+ "5. 로그인\n"
+				+ "6. 권한 확인\n"
+				+ "7. BMI\n"
+				+ "8. 계산기\n"
+				+ "9. P/F\n"
+				+ "선택 : ");
+		
+		int num = sc.nextInt();
+		
+		switch(num) {
+		case 1 :
+			practice1();
+			break;
+		case 2 :
+			practice2();
+			break;
+		case 3 :
+			practice3();
+			break;
+		case 4 :
+			practice4();
+			break;
+		case 5 :
+			practice5();
+			break;
+		case 6 :
+			practice6();
+			break;
+		case 7 :
+			practice7();
+			break;
+		case 8 :
+			practice8();
+			break;
+		case 9 :
+			practice9();
+			break;
+		}
+	}
+	
 	public void practice11() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("비밀번호 입력(1000~9999) : "); // 4자리 맞추기위해 숫자 범위를 1000~9999로 함
+		System.out.print("비밀번호 입력(1000~9999) : "); // 4자리 맞추기위해 숫자 범위를 1000~9999로 함
  		int pwd = sc.nextInt();
 		
 		if(pwd > 999 && pwd < 9999) { // 자리수 체크, 999보다 크고 9999보다 작은 숫자는 네자리 숫자밖에 없음
