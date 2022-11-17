@@ -259,7 +259,63 @@ public class LoopPractice {
 	}
 	
 	public void practice15() {
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("자연수 하나를 입력하세요 : ");
+		int num = sc.nextInt();
+		int count = 0;
+		
+		for(int i=2 ; i<=num ; i++) {
+			if(i%2==0 || i%3==0) {
+				System.out.print(i+" ");
+				count++;
+			}
+		}
+		System.out.println();
+		System.out.print("count : "+count);
+	}
+	
+	public void practice16() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : "); // 3
+		int num = sc.nextInt();
+
+					 //i<=1+1
+		for(int i=0 ; i<=num/2 +1 ; i++) {
+			for(int j=0 ; j<=i ; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+			// i=1
+		for(int i=num/2 ; i>=0 ; i--) {
+						// 0 1
+			for(int j=0 ; j<=i ; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void practice17() {
+		// 정수를 입력했을때 첫줄과 막줄은 *****
+		// 그 이외줄은 *   *
+		// if i=1 이거나 i=5이면 *****
+		// else *   * 출력
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		
+		for(int i=1 ; i<=num ; i++ ) {
+			if(i==1 || i==num) {
+				System.out.println("*****");
+			} else {
+				System.out.println("*   *");
+			}
+		}
 	}
 	
 	// 어려울 경우 출력된걸 한줄씩 코딩해보고 규칙을 찾아 전체 코드 만들기
@@ -297,7 +353,29 @@ public class LoopPractice {
 		}
 	}
 	
-	
+	public void practice19() {		// 미완
+		//   *  	빈칸3별1 
+		//  * * 	빈칸2별1빈칸1별1 
+		// *   *	빈칸1별1빈칸3별1
+		//*     *	빈칸0별1빈칸5별1
+		
+		// num=4, 빈칸이 num-1에서 -1을 계속 연산
+		// 첫번째 별은 무조건 1개씩 출력
+		// 두번째 빈칸은 +2가 수행됨
+		// 두번째 빈칸은 첫행과 마지막행에 출력x
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		
+		for(int i=1 ; i<=num ; i++) {
+			for(int j=num-1 ; 0<j && j<num ; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
 	
 	
 	
