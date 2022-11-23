@@ -67,8 +67,6 @@ public class Student {
 		return height;
 	}
 	
-	
-	
 	// 모든 필드값을 하나의 문자열로 합쳐서 돌려주는 용도의 메서드
 	public String information() {
 		//xxx님의 나이는 xx살이고 xx입니다.
